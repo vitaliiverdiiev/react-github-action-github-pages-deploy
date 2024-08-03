@@ -4,15 +4,45 @@
   box-sizing: border-box;
 }
 
-body,
-#root {
-  width: 100%;
+body {
   height: 100vh;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header .container {
+  text-align: center;
+  padding: 10px;
+}
+
+h2.title {
+  font-weight: 300;
 }
 
 .container {
-  height: 100vh;
   max-width: 1200px;
-  margin: 0 auto;
-  overflow: auto;
+  margin: auto;
+}
+
+.header {
+  border-bottom: 0.5px solid lightgrey;
+}
+
+main.main {
+  overflow-y: auto;
+}
+
+.document {
+  margin: auto;
+  width: fit-content;
+}
+
+.page {
 }
